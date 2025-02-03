@@ -1,4 +1,4 @@
-ScrollReveal().reveal('.infoOne',
+ScrollReveal().reveal('.infoLeft',
     {
     delay:200,
     distance:'100px',
@@ -8,27 +8,7 @@ ScrollReveal().reveal('.infoOne',
     duration:1000
     }
 );
-ScrollReveal().reveal('.infoTwo',
-    {
-    delay:200,
-    distance:'100px',
-    // reset:true,
-    origin:'right',
-    interval:500,
-    duration:1000
-    }
-);
-ScrollReveal().reveal('.infoThree',
-    {
-    delay:200,
-    distance:'100px',
-    // reset:true,
-    origin:'left',
-    interval:300,
-    duration:1000
-    }
-);
-ScrollReveal().reveal('.infoFour',
+ScrollReveal().reveal('.infoRight',
     {
     delay:200,
     distance:'100px',
