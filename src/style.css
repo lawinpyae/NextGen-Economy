@@ -1,0 +1,35 @@
+/* jetBrains font */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+*{
+    font-family: "JetBrains Mono", serif;
+}
+
+#features{
+    background: linear-gradient(110deg, #ADABF5 0%, rgba(255, 255, 255, 0.00) 99%);
+}
+
+/* #firstInfo{
+    background: linear-gradient(110deg, #ABF5F1 0%, rgba(255, 255, 255, 0.00) 99%);
+} */
+
+@font-face {
+    font-family:happy;
+    src: url("../assets/fonts/Happy-Town.otf");
+}
+#popularNow{
+    font-family: happy !important;
+    
+}
+
+#infoOne{
+    background: hsla(189, 100%, 50%, 1);
+
+    background: linear-gradient(90deg, hsla(189, 100%, 50%, 1) 0%, hsla(248, 16%, 61%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(189, 100%, 50%, 1) 0%, hsla(248, 16%, 61%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(189, 100%, 50%, 1) 0%, hsla(248, 16%, 61%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#01DBFF", endColorstr="#918DAC", GradientType=1 );
+}
