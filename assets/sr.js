@@ -1,90 +1,150 @@
-ScrollReveal().reveal('.infoLeft',
+ScrollReveal().reveal('.aniOne',
     {
-    delay:200,
-    distance:'100px',
+    delay:300,
+    distance:'500px',
     // reset:true,
     origin:'left',
-    interval:300,
-    duration:1000
-    }
-);
-ScrollReveal().reveal('.infoRight',
-    {
-    delay:200,
-    distance:'20px',
-    // reset:true,
-    origin:'right',
     interval:500,
     duration:1000
     }
 );
-ScrollReveal().reveal('.anibottom',
+ScrollReveal().reveal('.aniTwo',
     {
-    delay:300,
-    distance:'200px',
+    delay:500,
+    distance:'500px',
+    // reset:true,
+    origin:'left',
+    interval:500,
+    duration:1200
+    }
+);
+ScrollReveal().reveal('.aniThree',
+    {
+    delay:500,
+    distance:'300px',
+    // reset:true,
+    origin:'bottom',
+    interval:500,
+    duration:1200
+    }
+);
+ScrollReveal().reveal('.aniFour',
+    {
+    delay:500,
+    distance:'110px',
+    // reset:true,
+    origin:'right',
+    interval:500,
+    duration:1200
+    }
+);
+ScrollReveal().reveal('.aniFive',
+    {
+    delay:1000,
+    distance:'500px',
     // reset:true,
     origin:'bottom',
     interval:500,
     duration:2000
     }
 );
-ScrollReveal().reveal('.featureRight',
+ScrollReveal().reveal('.aniSix',
     {
-    delay:500,
-    distance:'200px',
-    // reset:true,
-    origin:'right',
-    interval:500,
-    duration:1000
-    }
-);
-ScrollReveal().reveal('.featureLeft',
-    {
-    delay:500,
-    distance:'200px',
+    delay:1000,
+    distance:'500px',
     // reset:true,
     origin:'left',
     interval:500,
     duration:1000
     }
 );
-ScrollReveal().reveal('.carouselbottom',
+ScrollReveal().reveal('.aniSeven',
+    {
+    delay:1000,
+    distance:'120px',
+    // reset:true,
+    origin:'right',
+    interval:500,
+    duration:1200
+    }
+);
+ScrollReveal().reveal('.fAll',
+    {
+    delay:1000,
+    distance:'500px',
+    // reset:true,
+    origin:'bottom',
+    interval:500,
+    duration:2000
+    }
+);
+ScrollReveal().reveal('.fSvg',
+    {
+    delay:500,
+    distance:'100px',
+    // reset:true,
+    origin:'right',
+    interval:500,
+    duration:1000
+    }
+);
+ScrollReveal().reveal('.iOne',
+    {
+    delay:1000,
+    distance:'500px',
+    // reset:true,
+    origin:'left',
+    interval:500,
+    duration:2000
+    }
+);
+ScrollReveal().reveal('.iTwo',
+    {
+    delay:1000,
+    distance:'100px',
+    // reset:true,
+    origin:'right',
+    interval:500,
+    duration:2000
+    }
+);
+ScrollReveal().reveal('.sOne',
+    {
+    delay:1000,
+    distance:'200px',
+    // reset:true,
+    origin:'top',
+    interval:500,
+    duration:1000
+    }
+);
+ScrollReveal().reveal('.sTwo',
     {
     delay:500,
     distance:'300px',
     // reset:true,
-    origin:'bottom',
-    interval:300,
-    duration:1500
-    }
-);
-ScrollReveal().reveal('.suppliertop',
-    {
-    delay:500,
-    distance:'50px',
-    // reset:true,
-    origin:'top',
-    interval:300,
+    origin:'left',
+    interval:500,
     duration:1000
     }
 );
-ScrollReveal().reveal('.supplierRight',
+ScrollReveal().reveal('.sThree',
     {
     delay:500,
-    distance:'50px',
-    // reset:true,
-    origin:'right',
-    interval:300,
-    duration:1000
-    }
-);
-ScrollReveal().reveal('.supplierBtn',
-    {
-    delay:300,
     distance:'100px',
     // reset:true,
-    origin:'bottom',
-    interval:300,
+    origin:'right',
+    interval:500,
+    duration:1000
+    }
+);
+ScrollReveal().reveal('.pOne',
+    {
+    delay:500,
+    distance:'300px',
+    // reset:true,
+    origin:'top',
+    interval:500,
     duration:1000
     }
 );

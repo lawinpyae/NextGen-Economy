@@ -5,13 +5,85 @@
     font-family: "JetBrains Mono", serif;
 }
 
-#features{
-    background: linear-gradient(110deg, #ADABF5 0%, rgba(255, 255, 255, 0.00) 99%);
-}
+/* Loading..... */
+.load {
+    /* width: 100%;
+    height: 100%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* z-index: 10; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* HTML: <div class="loader"></div> */
+  .loader {
+    color: black;
+    font-size: 45px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    transform: translateZ(0);
+    animation: mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
+  }
+  
+  @keyframes mltShdSpin {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em,
+      0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 
+      0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, 
+      -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, 
+      -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+       -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, 
+       -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+       -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, 
+       -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 
+      0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  
+  @keyframes round {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+  }
+   
 
-/* #firstInfo{
-    background: linear-gradient(110deg, #ABF5F1 0%, rgba(255, 255, 255, 0.00) 99%);
+/* Toggle B */
+input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: #3498db ;
+  }
+
+/* #features{
+    background: linear-gradient(110deg, #ADABF5 0%, rgba(255, 255, 255, 0.00) 99%);
 } */
+
+
 
 @font-face {
     font-family:happy;
@@ -32,4 +104,37 @@
     background: -webkit-linear-gradient(90deg, hsla(189, 100%, 50%, 1) 0%, hsla(248, 16%, 61%, 1) 100%);
     
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#01DBFF", endColorstr="#918DAC", GradientType=1 );
+}
+/* Slick */
+.slider-container {
+  /* width: 80%; */
+  /* margin: 50px auto; */
+}
+
+.slick-slide {
+  /* background: white; */
+  /* color: #3498db; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* font-size: 2em; */
+  /* height: 150px; */
+  /* width: 150px; */
+  /* border-radius: 10px; */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Default slides are faded */
+.slick-slide:not(.slick-center) {
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+
+/* Center slide is fully visible and larger */
+.slick-center {
+  opacity: 1;
+  transform: scale(1);
+  /* font-weight: bold; */
+  /* color: orange; */
+  /* border: 3px solid orange; */
 }

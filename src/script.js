@@ -1,7 +1,18 @@
+// loading..
+let load = document.querySelector(".load");
+
+window.addEventListener("load", () => {
+  load.style.display = "none";
+});
+
 // Add to Card alert
 let itemsOne = document.querySelector(".itemsOne");
 let itemsTwo = document.querySelector(".itemsTwo");
 let itemsThree = document.querySelector(".itemsThree");
+let itemsFour = document.querySelector(".itemsFour");
+let itemsFive = document.querySelector(".itemsFive");
+let itemsSix = document.querySelector(".itemsSix");
+
 // let closeAlert=document.querySelector('.closeAlert');
 let notiAlert = document.querySelector(".notiAlert");
 // let cardClose=document.querySelector('.cardClose');
@@ -12,6 +23,15 @@ itemsTwo.addEventListener("click", () => {
   notiAlert.classList.add("animate__fadeInDown");
 });
 itemsThree.addEventListener("click", () => {
+  notiAlert.classList.add("animate__fadeInDown");
+});
+itemsFour.addEventListener("click", () => {
+  notiAlert.classList.add("animate__fadeInDown");
+});
+itemsFive.addEventListener("click", () => {
+  notiAlert.classList.add("animate__fadeInDown");
+});
+itemsSix.addEventListener("click", () => {
   notiAlert.classList.add("animate__fadeInDown");
 });
 
@@ -120,3 +140,30 @@ email.addEventListener("copy", (event) => {
 pass.addEventListener("copy", (event) => {
   event.preventDefault();
 });
+
+
+// Dark Mode
+let switchBtn = document.querySelector("#toggleB");
+
+      let changeDark = () => {
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("Theme", "dark");
+        switchBtn.setAttribute("checked", "checked");
+      };
+
+      let changeLight = () => {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("Theme", "light");
+        switchBtn.removeAttribute("checked");
+      };
+
+      let localTheme = localStorage.getItem("Theme");
+      if (localTheme === "light") changeLight();
+      else changeDark();
+
+      switchBtn.addEventListener("change", () => {
+        let changeLocal = localStorage.getItem("Theme");
+
+        if (changeLocal === "dark") changeLight();
+        else changeDark();
+      });
