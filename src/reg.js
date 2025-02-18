@@ -12,8 +12,7 @@ let floatPass = document.querySelector(".floatPass");
 let floatConPass = document.querySelector(".floatConPass");
 let floatFullName = document.querySelector(".floatFullName");
 let floatPh = document.querySelector(".floatPh");
-let form=document.querySelector("#form");
-
+let form = document.querySelector("#form");
 
 let checkEmail = () => {
   let str = email.value;
@@ -23,7 +22,7 @@ let checkEmail = () => {
   if (!reg.test(str)) {
     // emailLabel.classList.remove('text-sm','text-gray-900');
     // emailLabel.classList.add('text-base','text-red-500');
-    email.classList.remove("focus:border-blue-600","text-green-500");
+    email.classList.remove("focus:border-blue-600", "text-green-500");
     email.classList.add(
       "invalid",
       "invalid:border-red-500",
@@ -31,7 +30,7 @@ let checkEmail = () => {
       "invalid:focus:border-red-500",
       "border-red-500",
       "focus:border-red-500",
-      "text-red-500",
+      "text-red-500"
     );
     floatEmail.classList.remove(
       "peer-focus:text-blue-600",
@@ -58,7 +57,7 @@ let checkEmail = () => {
       "invalid:focus:border-red-500",
       "border-red-500",
       "focus:border-red-500",
-      "text-red-500",
+      "text-red-500"
     );
     floatEmail.classList.remove("peer-focus:text-red-500", "text-red-500");
     floatEmail.classList.add("peer-focus:text-green-500", "text-green-500");
@@ -115,7 +114,6 @@ let checkPass = () => {
   }
 };
 
-
 // let checkConPass = () => {
 //   let str = conPass.value;
 //   // console.log(str);
@@ -167,21 +165,17 @@ let checkPass = () => {
 //   }
 // };
 
-
-
-
-
-
-let checkPh = () => {   //  ထိပ်ဆုံး စာလုံးက +959 နဲ့စကိုစရမယ်။အဲ့ +959 ရဲ့အနောက်ကမှ "7  6  4  2  8  9"  ထဲက တစ်လုံးလိုက်ကို လိုက်ကိုလိုက်ရမယ်။+959 အနောက်ကစရေရင်စုစုပေါင်း "11" လုံးရှိရမယ်။
+let checkPh = () => {
+  //  ထိပ်ဆုံး စာလုံးက +959 နဲ့စကိုစရမယ်။အဲ့ +959 ရဲ့အနောက်ကမှ "7  6  4  2  8  9"  ထဲက တစ်လုံးလိုက်ကို လိုက်ကိုလိုက်ရမယ်။+959 အနောက်ကစရေရင်စုစုပေါင်း "11" လုံးရှိရမယ်။
 
   let str = ph.value;
   // console.log(str);
-  let reg =/^\+959[764289]\d{8}$/; 
+  let reg = /^\+959[764289]\d{8}$/;
 
   if (!reg.test(str)) {
     // emailLabel.classList.remove('text-sm','text-gray-900');
     // emailLabel.classList.add('text-base','text-red-500');
-    ph.classList.remove("focus:border-blue-600","text-green-500");
+    ph.classList.remove("focus:border-blue-600", "text-green-500","dark:text-white","dark:focus:border-blue-500");
     ph.classList.add(
       "invalid",
       "invalid:border-red-500",
@@ -189,24 +183,29 @@ let checkPh = () => {   //  ထိပ်ဆုံး စာလုံးက +959 
       "invalid:focus:border-red-500",
       "border-red-500",
       "focus:border-red-500",
-      "text-red-500"
+      "text-red-500",
+      "dark:text-red-500",
+   
     );
     floatPh.classList.remove(
       "peer-focus:text-blue-600",
       "peer-focus:text-green-500",
-      "text-green-500"
+      "text-green-500",
+      "dark:text-gray-400",
+      "peer-focus:dark:text-blue-500"
     );
-    floatPh.classList.add("peer-focus:text-red-500", "text-red-500");
+    floatPh.classList.add("peer-focus:text-red-500", "text-red-500","dark:text-red-500","peer-focus:dark:text-red-500");
     signBtn.setAttribute("disabled", "disabled");
     signBtn.classList.add("disabled:cursor-not-allowed");
-  }else {
+  } else {
     // emailLabel.classList.add('text-sm','text-green-700');
     // emailLabel.classList.remove('text-base','text-red-500');
     ph.classList.add(
       "focus:ring-green-500",
       "focus:border-green-500",
       "border-green-500",
-      "text-green-500"
+      "text-green-500",
+      "dark:text-green-500"
     );
     ph.classList.remove(
       "invalid",
@@ -216,10 +215,12 @@ let checkPh = () => {   //  ထိပ်ဆုံး စာလုံးက +959 
       "invalid:focus:border-red-500",
       "border-red-500",
       "focus:border-red-500",
-      "text-red-500"
+      "text-red-500",
+      "dark:text-red-500",
+
     );
-    floatPh.classList.remove("peer-focus:text-red-500", "text-red-500");
-    floatPh.classList.add("peer-focus:text-green-500", "text-green-500");
+    floatPh.classList.remove("peer-focus:text-red-500", "text-red-500","dark:text-red-500","peer-focus:dark:text-red-500");
+    floatPh.classList.add("peer-focus:text-green-500", "text-green-500","text-green-500","peer-focus:dark:text-green-500");
     signBtn.removeAttribute("disabled");
     signBtn.classList.remove("disabled:cursor-not-allowed");
   }
@@ -251,8 +252,8 @@ pass.addEventListener("keyup", () => {
 // ph.addEventListener("copy", (event) => {
 //   event.preventDefault();
 // });
-form.addEventListener('copy',(event)=>{
-event.preventDefault();
+form.addEventListener("copy", (event) => {
+  event.preventDefault();
 });
 
 conPass.addEventListener("input", function () {
@@ -301,3 +302,21 @@ conPass.addEventListener("input", function () {
     signBtn.classList.add("disabled:cursor-not-allowed");
   }
 });
+
+
+// Dark Mode
+let changeDark = () => {
+  document.documentElement.classList.add("dark");
+  localStorage.setItem("Theme", "dark");
+  // switchBtn.setAttribute("checked", "checked");
+};
+
+let changeLight = () => {
+  document.documentElement.classList.remove("dark");
+  localStorage.setItem("Theme", "light");
+  // switchBtn.removeAttribute("checked");
+};
+
+let localTheme = localStorage.getItem("Theme");
+if (localTheme === "light") changeLight();
+else changeDark();

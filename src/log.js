@@ -48,3 +48,20 @@ email.addEventListener("copy", (event) => {
 pass.addEventListener("copy", (event) => {
   event.preventDefault();
 });
+
+// Dark Mode
+let changeDark = () => {
+  document.documentElement.classList.add("dark");
+  localStorage.setItem("Theme", "dark");
+  // switchBtn.setAttribute("checked", "checked");
+};
+
+let changeLight = () => {
+  document.documentElement.classList.remove("dark");
+  localStorage.setItem("Theme", "light");
+  // switchBtn.removeAttribute("checked");
+};
+
+let localTheme = localStorage.getItem("Theme");
+if (localTheme === "light") changeLight();
+else changeDark();
